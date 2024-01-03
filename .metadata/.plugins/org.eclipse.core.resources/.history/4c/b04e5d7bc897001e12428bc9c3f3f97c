@@ -1,0 +1,31 @@
+package com.generic;
+
+import static org.junit.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class AutomationPractice {
+	
+	public static void main(String[] args) {
+	WebDriverManager.chromedriver().setup();//1st WebDriver Setup
+	WebDriver driver = new ChromeDriver();//2nd WebDriverInterface and driver Obj and New ChromeDriver is Class
+	driver.manage().window().maximize();//3rd driver manage window maximize
+	driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	/*
+	 * driver.findElement(By.xpath()).sendKeys("");
+	 * driver.findElements(By.xpath("")); driver.findElement(By.xpath("")).click();
+	 */
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,21 @@
+ package com.generic;
+
+import java.util.Arrays;
+
+public class ArrayPostiveway{
+  //Formula: for (Start point; < end point; ++){ print() }
+	 
+	
+	String[] ArrayName= {"Karim","Rezoana"};
+	public void positiveArray() {
+		
+	for(int a =( ArrayName.length)+1;a<=0; a++) {
+	System.out.println(ArrayName);	
+		}	
+	}	
+  public static void main(String[] args) {
+	  ArrayPostiveway obj= new ArrayPostiveway();
+		obj.positiveArray();
+		}
+
+}

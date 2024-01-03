@@ -1,0 +1,129 @@
+Partiallink
+Xpath
+CSSselector
+What is xpath? Tell me the formula of xpath
+Xpath = one of the selenium locator
+Formula = //*[@locator=’value’]
+<input class="oxd-input oxd-input--active" name="username" placeholder="Username" autofocus="" data-v-1f99f73c="">
+Write xpath 🡺  //*[@ name=’ username’]
+Group in = select one locator among multiple 🡺 (xpath)[no]
+What will selenium tell if any xpath wrong?
+Selenium exception
+InvalidSelectorException
+NoSuchElement exception
+Why
+I create wrong xpath
+New application version came 🡺 locator chage
+Dev change xpath by mistake
+Xpath correct , but selenium can not interact with application 🡺in which situation?
+Exception : Stale element exception *****************
+HTML locator hidden or disable or invisible
+May be locator or xpath inside any iframe
+What is stale element in selenium? *************
+This a selenium exception
+Why:
+Here xpath correct
+But run time xpath or locator got hidden
+Selenium: can not interact in this situation with application
+How to handle:
+Fluent wait
+JSE
+How to handle any HTML locator with hidden/disable/invisible?
+JSE
+How to handle I Frame?
+Driver.SwitchTo(iframe index)🡺 then selenium will jump inside iFrame
+How to write xpath with text?
+Formula : //*[@locator=’value’]🡺
+HTML>> inspect >> if any black letter = known text
+Text xpath formula : //*[text()=’text’] 🡺//*[text()=' Login ']
+How to find parent / sibling / ancestor of any locator?
+What are the types of xpath?
+// = only child 🡺 known as relative xpath
+/ = GP/P/c relation🡺 absolute
+Example:
+/USA/New york/JH (GP/P/C)
+//JH(C)
+Which one is good in automation &why?
+Relative good 
+Why: not depends on GP or P, less chance of break
+But absolute xptah depends on GP & P, so any location change in GP or P then child xpath will be break
+Which locator do u use in your automation?
+Xpath
+Formula
+Text
+Method
+other
+CSSselector🡺 
+Identify locator = better to use id & class
+Formula : 
+Id=# locatorvalue
+Class=.locatorvalue
+
+
+Xpath
+CSS selector
+Dynamic web element
+Yes (methods)
+No
+Color
+Possible by xpath.getCSSValue()
+Best
+Font type
+
+
+Best
+Font size
+
+
+Best
+Browser: IE
+slow
+Good
+
+
+IE browser challenges:
+Only close() 
+CSS selector good
+
+Dynamic Web element= locator value change frequently
+V1 :Password🡺 @id=pass 🡺 NY
+V2:Password🡺 @id=pass222🡺 CA
+V3: Password🡺 @id=pass333🡺 London
+How to write a single xpath who can identify all 3 locator
+Basic formula: //*[@id=’pass333’]🡺3rd
+Method🡺 contains()🡺 //*[contains(@id,’pass’)]== all 3
+
+//*[contains(@class,’oxd - form’)]
+What are the methods of xpath? 🡸 Expert QA
+Contains() 🡺 formula : //*[contains(@locator,’value’)]
+Start-with()
+Following-code()
+Preceding-node()
+Selenium Other locator method:
+Text()
+Parent ::
+Sibling ::
+Ancestor ::
+Note: in java 8 change method sign
+Java 1 to Java 7 method sign = ()
+Java 8 method sign = () or ::
+How to handle xpath in your automation framework?
+PF or POM:
+ I have to create separate class >> all or store all xpath inside that class page by page
+LoginPage ..> all login page xpath
+Xpath can not store with java String
+Need to store xpath PF/POB concept
+PF
+POM
+@Findby
+BY
+Faster
+🡺@CacheLookup
+Fast
+Can handle larger application (>500 web element)
+Can handle smaller application
+
+
+
+
+

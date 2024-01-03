@@ -1,0 +1,20 @@
+ package com.generic;
+
+import java.util.Arrays;
+
+public class ArrayPostiveway{
+  //Formula: for (Start point; < end point; ++){ print() }
+   String[] name= {"Karim","Rezoana"};
+     
+	public void positiveArray() {
+		
+	for(int a = name.length-1;a<=0; a--) {
+	System.out.println(name.length);	
+		}	
+	}	
+  public static void main(String[] args) {
+	  ArrayPostiveway obj= new ArrayPostiveway();
+		obj.positiveArray();
+		}
+
+}

@@ -1,0 +1,81 @@
+package com.pagefactory;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Masterpagefactory {
+	
+	 public Masterpagefactory(WebDriver driver) {
+	 PageFactory.initElements(driver,this);//4th PageFactory initElement formula	 
+		 
+		 
+	 }
+	
+	@FindBy(xpath = "//*[@fa-fa-Lock]")//3rd-FindBy XPath formula
+	
+	
+	
+	private WebElement signin; //1st-Encapsulation need for Signing+password
+	@FindBy(xpath = "//*[@name='email'])[1]")
+	
+	private WebElement password;
+	@FindBy(xpath = "//*[@")
+	
+	
+	public WebElement getSignin() { //2nd-Source and Get Getter method 
+		return signin;
+		
+		
+	}
+
+
+
+
+
+
+
+
+public WebElement getPassword() {
+		return password;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+ 
+		
+		
+		
+		
+
+	}
+
+}

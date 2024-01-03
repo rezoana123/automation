@@ -1,0 +1,33 @@
+package com.generic;
+
+import static org.junit.Assert.assertTrue;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class AutomationPractice {
+	
+	public static void main(String[] args) {
+	WebDriverManager.chromedriver().setup();//1st WebDriver Setup
+	WebDriver driver = new ChromeDriver();//2nd WebDriverInterface and driver Obj and New ChromeDriver is Class
+	driver.manage().window().maximize();//3rd driver manage window maximize
+	driver.get("https://www.orangehrm.com/");
+	driver.findElement(By.xpath("//input[@type='email']")).sendKeys("rezwanislam857@gmail.com");
+	driver.findElements(By.xpath("(//*[@type ='submit'])[1]"));
+	driver.findElement(By.xpath("//*[@id= 'Form_submitForm_action_request'])"));
+
+	
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

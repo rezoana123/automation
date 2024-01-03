@@ -1,0 +1,153 @@
+package com.automation;
+
+
+
+	public static void main(String[] args) {
+		public class TestingMap {
+			
+			public static void main(String[] args) {
+					
+					// Key and Value = pair
+					// key must be unique
+					// Map does not allow any duplicate key but it allows duplicate value
+					// HashMap follow the Key order ascending 
+					
+					Map<Integer,String>  myMap = new HashMap<Integer, String>();
+					
+					myMap.put(1, "Abdus");
+					myMap.put(2, "Abdus");
+					myMap.put(6, "Abdus");
+					myMap.put(4, "Sobhan");
+					myMap.put(9, "Milk");
+					myMap.put(5, "Rice");
+					myMap.put(7, "SQL");
+				
+					
+					System.out.println(myMap);
+					
+					String obj = myMap.get(7);
+					System.out.println(obj);
+					
+					
+					  Map<String, String> myoneMap =new Hashtable<String,String>();
+					  myoneMap.put("UserName", "Amina123"); 
+					  myoneMap.put("FullName", "Sobhan");
+					  myoneMap.put("City", "New York");
+					  myoneMap.put("Country", "Sobhan"); 
+					  myoneMap.put("FirstName", "Sobhan");
+					  myoneMap.put("LastName", "Akter");
+					  
+					 String value = myoneMap.get("City");
+					  System.out.println(value);
+					  System.out.println(myoneMap); 
+					  System.out.println(myoneMap.size());
+					  
+						
+						  Map<String, String> mytreemap = new TreeMap<String, String>(); 
+						  // TreeMap follow Ascending Key Order 
+						  mytreemap.put("username","sobharstech@gmail.com"); 
+						  mytreemap.put("Password", "sobhan@123");
+						  mytreemap.put("Subj", "Selenium"); 
+						  mytreemap.put("America", "Jackson Heights");
+						  mytreemap.put("Position", "QA Lead"); 
+						  mytreemap.put("Designation","QA Analyst"); 
+						  mytreemap.put("Pos", "QA Lead"); 
+						  mytreemap.put("Designation", "QA Analyst");
+						
+						  System.out.println(mytreemap);
+						 
+					 
+				}
+
+
+			}
+
+
+
+			import java.util.HashMap;
+
+			public class mymaplern {
+				
+				public static void main(String[] args) {
+					
+					
+					HashMap<String, String> obj = new HashMap< String,String>();
+					
+					obj.put("name","Student");
+					obj.put("number","roll");
+					obj.put("put","put");
+					obj.put("put","seat");
+					obj.put("put","pass");
+					
+					System.out.println(obj);
+					
+					
+
+			import java.util.LinkedHashSet;
+			import java.util.Set;
+			import java.util.TreeSet;
+
+			public class Linksetstring {
+				
+				// LinkedHashSet allow only one Null no duplicate value but it follows inserting order
+				
+				
+					public static void main(String[] args) {
+						
+					Set<String> mylinkset =  new LinkedHashSet<String>();
+					
+					
+					mylinkset.add(null);
+					mylinkset.add("Software");
+					mylinkset.add("Computer");
+					mylinkset.add(null);
+					mylinkset.add("Java");
+					mylinkset.add("SQL");
+					mylinkset.add("API");
+					mylinkset.add("Manual");
+					mylinkset.add(null);
+					mylinkset.add("Automation");
+					
+					System.out.println(mylinkset);
+					
+					
+					Set<Integer> myTreeSet = new TreeSet<Integer>();
+					
+					myTreeSet.add(100);
+					myTreeSet.add(20);
+					myTreeSet.add(800);
+					myTreeSet.add(40);
+					myTreeSet.add(100);
+					myTreeSet.add(30);
+					myTreeSet.add(200);
+					//myTreeSet.add(null);
+					
+					
+					System.out.println(myTreeSet);
+					
+					//It is allow Disaccending order
+					
+					Set<String> myTreeSet2 = new TreeSet<String>();
+					//myTreeSet2.add(null);
+					myTreeSet2.add("Saad");
+					myTreeSet2.add("Fraz");
+					myTreeSet2.add("Subhaan");
+					myTreeSet2.add("Ameer");
+					myTreeSet2.add("Ali");
+					myTreeSet2.add("Zain");
+					myTreeSet2.add("Khala");
+					myTreeSet2.add("Khala");
+					
+					System.out.println(myTreeSet2);
+					
+					}
+					
+			}
+
+				
+
+		
+
+	}
+
+}

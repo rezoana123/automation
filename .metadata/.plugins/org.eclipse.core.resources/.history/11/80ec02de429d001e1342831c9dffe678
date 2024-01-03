@@ -1,0 +1,11 @@
+import com.generic.AutomationPractice;
+
+public class TestRun {
+	
+	public static void main(String[] args) {
+	AutomationPractice obj= new AutomationPractice();
+	obj.getlog();
+}
+	
+
+}

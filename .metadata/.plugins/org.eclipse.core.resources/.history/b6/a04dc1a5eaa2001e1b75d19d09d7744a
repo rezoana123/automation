@@ -1,0 +1,28 @@
+package com.utilpackage;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+public class Baseconfig {
+	
+	public void getconfig() throws Exception {
+		
+	String filepath = "./config.properties";	
+		//convert file(note pad) into stream = java dev class : FileInputStream
+	FileInputStream fis = new FileInputStream(filepath);
+	   //read note pad /config file ==> java dev to use a class= Properties
+	
+	Properties  pro = new Properties();//now java know what r the value
+	pro.load(fis);
+	   //get value
+	Object eachvalue = pro.get("URL");
+	System.out.println(eachvalue);
+	
+	}
+ public static void main(String[] args) throws Exception {
+	 Baseconfig obj = new Baseconfig();
+	 obj.getconfig();
+	 
+}
+}

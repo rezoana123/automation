@@ -1,0 +1,57 @@
+package com.generic;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AutomationPractice {
+	
+	//public void getLogIn() {
+	//WebDriverManager.chromedriver().setup();//1st WebDriver Setup
+	//WebDriver driver = new ChromeDriver();//2nd WebDriverInterface and driver Obj and New ChromeDriver is Class
+	//driver.manage().window().maximize();//3rd driver manage window maximize
+	//For Import if is not working so press (control+Shift+o)
+	//driver.get("https://www.automationexercise.com");//open the URL
+	//driver.navigate().to("");// Navigate URL use to make sure more 
+	//driver.manage().window().maximize();
+	//driver.findElement(By.xpath("//*[@class= 'fa fa-lock']")).click();//Xpath formula is more relaibale
+	//driver.findElement(By.xpath("(//*[@type='email'])[1]")).sendKeys("sobhanrstech@gmail.com");
+    //driver.findElement(By.xpath("//*[@type='password']")).sendKeys("sabiha2019");
+   // driver.findElement(By.xpath("(//*[@class='btn btn-default'])[1]")).click();	
+     //*[text()=’value’ ]
+//}}
+    public void getlog() {
+    WebDriver driver = new ChromeDriver();//Open a browser-Selenium-4 use//
+    //driver.get("");       // get method only get URL
+    //Navig mth(Best)can go to URL/Forward/Backward/Refresh/
+    driver.navigate().to("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");//1st
+    //driver.navigate().forward(); //
+    //driver.navigate().back();
+    //driver.navigate().refresh();
+   // driver.manage().window().fullscreen();//full screen u can not see Border 
+    //Video/Drama/Movie/Game/full screen is good
+    driver.manage().window().maximize(); //Maximize need for Automation application and can see border
+    //Wait for GUI page load 
+    driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+    //Wait HTM Page Load by Implicit wait
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+    //WebElement logout= driver.findElement(By.xpath(""));  //PF or POM anyone we use//Hide the XPath
+    driver.findElement(By.xpath("//*[@name='username']")).sendKeys("Admin");//Selenium Find locator by FindByXpath
+    //driver.findElement(By.xpath("//*[@class='oxd-input oxd-input--active'])[1]'])")); //valid user
+     //XPath u can not show in coding//
+    driver.findElement(By.xpath("//*[@name='password']")).sendKeys("admin123");//Password showing is Crime
+    driver.findElement(By.xpath("//*[@type='submit']")).click(); //Click login Button
+    //Login is should be visible for successful login
+    driver.findElement(By.xpath("//*")).click();
+    //WebElement logout =driver.findElement(By.xpath("(//*[@role='menuitem'])[4]"));
+      // boolean logOutFound = logout.isDisplayed();//Login button is visible or not use (isDisPlayed code)/
+       System.out.println(logOutFound );
+   // driver.close();//close means current Tab/Browser it's not close Driver/can not free up all system memory
+    //driver.quit();//Quit method means close web browser and tab-all /free all system memory
+    
+    
+   }	
+}

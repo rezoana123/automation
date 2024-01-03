@@ -1,0 +1,45 @@
+package com.generic;
+
+/*
+ * public class ReverseString {
+ * 
+ * 
+ * String testrun = ("united States");
+ * 
+ * 
+ * public void getreverse() { StringBuilder obj = new StringBuilder(testrun) ;
+ * 
+ * System.out.println(obj.reverse());
+ * 
+ * }
+ * 
+ * 
+ * 
+ * 
+ * 
+ * public static void main(String[] args) {
+ * 
+ * //
+ * 
+ * 
+ * 
+ * 
+ * 
+ * }
+ * 
+ * }
+ */
+
+ public class reversestring{
+   String name = ("America");
+  public void getreverse(){
+  Stringbuilder obj = new Stringbuilder(name);
+  System.out.println(obj.reverse());
+  }
+   public static void main(String[] args) {
+reversestring obj = newclass reversestring();
+      //obj.getreversestring();
+    
+    
+    
+///}
